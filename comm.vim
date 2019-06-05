@@ -48,6 +48,7 @@ Bundle 'mbbill/echofunc'
 Bundle 'scrooloose/nerdtree'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
+Bundle 'fatih/vim-go'
 "Bundle 'davidhalter/jedi-vim'
  
 "---------------------------------------------------------------------------
