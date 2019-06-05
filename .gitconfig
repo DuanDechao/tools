@@ -1,0 +1,11 @@
+[user]
+	name = 段德超
+    email = duandechao@corp.netease.com
+[credential]
+	helper = manager
+[alias]
+	switch = "!f() { git reset --hard HEAD; git submodule foreach git reset --hard HEAD; git fetch; git submodule foreach git fetch; git checkout \"$1\"; git submodule foreach git checkout \"$1\"; git pull; git submodule foreach git pull; }; f"
+	lo = !git log --all --decorate --oneline --graph
+[http]
+	postBuffer = 524288000
+	sslVerify = false
