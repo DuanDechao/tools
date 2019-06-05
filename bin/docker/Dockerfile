@@ -63,4 +63,8 @@ COPY packages.pth /usr/local/lib/python2.7/site-packages/
 
 RUN apt-get update && apt-get install -y supervisor
 
+RUN apt-get install -y g++
+RUN apt-get install -y git
+RUN apt-get install -y cmake
+
 CMD ["/bin/bash"]
