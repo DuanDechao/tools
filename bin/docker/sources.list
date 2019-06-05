@@ -1,0 +1,4 @@
+deb http://apt.x.netease.com:8660/debian/ jessie main non-free contrib
+deb-src http://apt.x.netease.com:8660/debian/ jessie main non-free contrib
+deb http://apt.x.netease.com:8660/debian-security/ jessie/updates main non-free contrib
+deb-src http://apt.x.netease.com:8660/debian-security/ jessie/updates main non-free contrib
