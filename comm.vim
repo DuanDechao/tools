@@ -141,7 +141,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:solarized_hitrail   =   0
 set background="dark"
-colorscheme solarized
+"colorscheme solarized
 set cursorline
 
 "显示命令
