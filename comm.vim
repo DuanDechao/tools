@@ -22,7 +22,7 @@ Bundle 'gmarik/vundle'
 " 代码源在 github 上的
 Bundle 'vim-scripts/DoxygenToolkit.vim'
 Bundle 'vim-scripts/FencView.vim'
-Bundle 'vim-scripts/OmniCppComplete'
+"Bundle 'vim-scripts/OmniCppComplete'
 Bundle 'vim-scripts/Rainbow-Parentheses-Improved-and2'
 Bundle 'vim-scripts/Tagbar'
 Bundle 'vim-scripts/matchit.zip'
@@ -141,7 +141,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:solarized_hitrail   =   0
 set background="dark"
-"colorscheme solarized
+colorscheme solarized
 set cursorline
 
 "显示命令
@@ -855,3 +855,21 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_version_warning = 0
+
+"Ycm
+let g:ycm_global_ycm_extra_conf='/root/.ycm_extra_conf.py'
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_server_log_level = 'info'
+let g:ycm_min_num_identifier_candidate_chars = 2
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_complete_in_strings=1
+let g:ycm_key_invoke_completion = '<c-z>'
+set completeopt=menu,menuone
+
+noremap <c-z> <NOP>
+
+let g:ycm_semantic_triggers =  {
+            \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+            \ 'cs,lua,javascript': ['re!\w{2}'],
+            \ }
